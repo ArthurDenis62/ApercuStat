@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-veryDarkBlueMainBG: hsl(233, 47%, 7%);
+    --color-darkDesaturatedBlueCardBG: hsl(244, 38%, 16%);
+    --color-softVioletAccent: hsl(277, 64%, 61%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-slightlyTransparentWhiteMain: hsla(0, 0%, 100%, 0.75);
+    --color-slightlyTransparentWhiteStat: hsla(0, 0%, 100%, 0.6);
+}
+
+p {
+    font-size: 15px;
+}
