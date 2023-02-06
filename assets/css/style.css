@@ -15,3 +15,106 @@
 p {
     font-size: 15px;
 }
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-veryDarkBlueMainBG);
+}
+
+.cards {
+    display: flex;
+    gap: 4em;
+    border-radius: 1em;
+    background-color: var(--color-darkDesaturatedBlueCardBG);
+}
+
+.container-left {
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+    max-width: 500px;
+    padding: 4em;
+}
+
+.container-left h1 {
+    width: 320px;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--color-white);
+    font-family: Inter;
+    margin-bottom: 40px;
+}
+
+.container-left h1 span {
+    color: var(--color-softVioletAccent);
+}
+
+.container-left p {
+    color: var(--color-slightlyTransparentWhiteStat);
+    font-family: Inter;
+    max-width: 350px;
+    line-height: 1.8em;
+}
+
+.container-left .container-bot {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.container-left .container-bot p {
+    display: flex;
+    flex-direction: column;
+    line-height: 2em;
+    font-family: Lexend Deca;
+}
+
+.container-left .container-bot p span {
+    color: var(--color-white);
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.container-right {
+    position: relative;
+}
+
+.container-right::before {
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--color-softVioletAccent);
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    opacity: 0.5;
+}
+
+.container-right img {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+@media (max-width: 1150px) {
+    .cards {
+        flex-direction: column;
+        border-bottom-left-radius: 1em;
+        border-bottom-right-radius: 1em;
+    }
+    .container-right {
+        height: 450px;
+    }
+    .container-right img, .container-right::before {
+        border-bottom-left-radius: 1em;
+        border-bottom-right-radius: 1em;
+        border-top-right-radius: 0em;
+    }
+}
